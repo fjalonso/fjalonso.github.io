@@ -1,4 +1,4 @@
-const version = "0.1.0";
+const version = "0.2.0";
 const cacheName = `fjalonso-${version}`;
 self.addEventListener('install', e => {
   e.waitUntil(
