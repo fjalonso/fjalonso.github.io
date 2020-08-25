@@ -1,2 +1,5 @@
-# fjalonso.github.io
-F.J. Alonso
+Lanzar Jekyll App:
+
+$ jekyll serve
+
+---

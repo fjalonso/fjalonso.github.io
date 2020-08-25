@@ -1,0 +1,19 @@
+
+<script type="text/javascript" src="{{ '/js/vendor/typed.min.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/js/vendor/jquery.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/js/foundation.min.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/js/app.js' | prepend: site.baseurl }}"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .then(function(registration){
+                console.log("Service Worker Registered");
+        }).catch(function(err) {
+            console.log("Service Worker ERROR: ", err)
+        });
+        navigator.serviceWorker.ready.then(function(registration) {
+            console.log('Service Worker Ready');
+        });
+    }
+</script>
+  

@@ -1,0 +1,16 @@
+---
+layout: page
+title: wiki
+permalink: /wiki/
+---
+
+<div class="page-list">
+
+    {% assign items = site.wiki | sort: 'title' %}
+    {% for item in items %}
+        <a class="wiki-link" href="{{ item.url }}">
+            <i class="icon {{ item.icono }}" title="{{ item.title }}"></i>
+        </a>
+    {% endfor %}
+
+</div>

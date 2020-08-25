@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    {% include head.html %}
+
+    <body>
+
+        <div id="app" class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+
+                <section id="menu" class="site-left side-menu">
+                    {% include left.html %}
+                </section>
+                <div class="site-left-menu">
+                    <a class="left-off-canvas-toggle" href="#" title="menú principal">
+                        <div class="menuIcon">
+                            <div class="top-bar"></div>
+                            <div class="middle-bar"></div>
+                            <div class="bottom-bar"></div>
+                        </div>
+                    </a>
+                </div>
+
+                <section id="content">
+                    {{ content }}
+                </section>
+
+                <div class="site-right-menu">
+                    <a class="right-off-canvas-toggle" href="#" title="menú secundario">
+                        <div class="menuIcon">
+                            <div class="top-bar"></div>
+                            <div class="middle-bar"></div>
+                            <div class="bottom-bar"></div>
+                        </div>
+                    </a>
+                </div>
+                <section id="config" class="site-right side-menu">
+                    {% include right.html %}
+                </section>
+
+          </div>
+        </div>
+
+        {% include foot.html %}
+
+    </body>
+
+</html>

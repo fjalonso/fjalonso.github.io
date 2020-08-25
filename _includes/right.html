@@ -1,0 +1,106 @@
+<aside class="right-off-canvas-menu">
+    <div class="seccion descripcion">
+        <span class="nombre">fj<b>alonso</b></span>
+    </div>
+    <div class="seccion competencias">
+        <span class="titular">competencias en desarrollo de proyectos</span>
+        <ul>
+            <li>
+                <ul class="subcompetencias">
+                    <li>análisis de requisitos</li>
+                    <li>investigación</li>
+                    <li>documentación</li>
+                    <li>estimación</li>
+                    <li>planning</li>
+                </ul>
+                <span class="subtitular">antes</span>
+            </li>
+            <li style="margin: 2rem 0;">
+                <ul class="subcompetencias">
+                    <li>diseño ux</li>
+                    <li>desarrollo</li>
+                    <li>testing</li>
+                </ul>
+                <span class="subtitular">durante</span>
+            </li>
+            <li>
+                <ul class="subcompetencias">
+                    <li>implantación</li>
+                    <li>soporte técnico</li>
+                </ul>
+                <span class="subtitular">después</span>
+            </li>
+        </ul>
+    </div>
+    <div class="seccion tecnologias">
+        <!-- span class="titular">tecnologías</span -->
+        <ul>
+           
+            {% for item in site.wiki %}
+                {% if item.fix %}
+                    <li><a title="{{ item.title }}" href="{{ item.url }}">
+                        <i class="icon {{ item.icono }}"></i>
+                    </a>
+                {% endif %}
+            {% endfor %}
+           
+            <!--li><a title="Spring Framework" href="https://spring.io" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-spring"></i>
+            </a></li>
+            <li><a title="Drupal CMS" href="https://www.drupal.org" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-drupal"></i>
+            </a></li>
+            <li><a title="Wordpress CMS" href="https://wordpress.org" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-wordpress"></i>
+            </a></li>
+            <li><a title="Jekyll CMS" href="https://jekyllrb.com" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-jekyll"></i>
+            </a></li>
+            <li><a title="PrestaShop eCommerce" href="https://www.prestashop.com" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-prestashop"></i>
+            </a></li>
+            <li><a title="Appcelerator Titanium" href="http://www.appcelerator.com" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-appcelerator"></i>
+            </a></li>
+            <li><a title="Google Cast" href="https://developers.google.com/cast" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-cast"></i>
+            </a></li>
+            <li><a title="AngularJS" href="https://angularjs.org" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-angular"></i>
+            </a></li>
+            <li><a title="Node.js" href="https://nodejs.org" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-nodejs"></i>
+            </a></li>
+            <li><a title="Git SCM" href="https://git-scm.com" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-git"></i>
+            </a></li>
+            <li><a title="MySQL" href="https://www.mysql.com" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-mysql"></i>
+            </a></li>
+            <li><a title="PostgreSQL" href="https://www.postgresql.org" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-postgresql"></i>
+            </a></li>
+            <li><a title="Sass" href="http://sass-lang.com" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-sass"></i>
+            </a></li>
+            <li><a title="Java" href="https://www.java.com" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-java"></i>
+            </a></li>
+            <li><a title="PHP" href="http://php.net" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-php"></i>
+            </a></li>
+            <li><a title="JavaScript" href="https://developer.mozilla.org/es/docs/Web/JavaScript" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-javascript"></i>
+            </a></li>
+            <li><a title="CSS3" href="https://www.w3.org/standards/techs/css" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-css3"></i>
+            </a></li>
+            <li><a title="HTML5" href="https://www.w3.org/standards/techs/html" rel="nofollow">
+                <i class="icon fjalonso-icon-logo-html5"></i>
+            </a></li-->
+            <li class="mas"><a title="wiki" href="/wiki/">
+                <i class="icon">···</i>
+            </a></li>
+        </ul>
+    </div>
+</aside>

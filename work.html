@@ -1,0 +1,82 @@
+---
+layout: page
+title: proyectos
+permalink: /proyectos/
+---
+
+<div class="work container">
+
+    <div id="grid3d" class="grid3d vertical">
+        <div class="work-item work-item-double">
+            algunos de mis <br /> 
+            proyectos personales
+        </div>
+        <div class="grid-wrap">
+            <div class="grid">
+                <figure>
+                    <img src="/resources/images/work/tc.png" alt="Próximamente" title="Próximamente" />
+                </figure>
+                <figure>
+                    <img src="/resources/images/work/q4tv.png" alt="Quiz4TV" title="Quiz4TV" />
+                </figure>
+                <figure>
+                    <img src="/resources/images/work/fja.png" alt="fjalonso.me" title="fjalonso.me" />
+                </figure>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="work-wrap">
+                <div class="work-img">
+                    <img src="/resources/images/work/tourcool.png" alt="En desarrollo" title="En desarrollo" />
+                    <div class="work-tech">
+                        <span class="work-name">En desarrollo</span>
+                        <i class="icon fjalonso-icon-logo-android" title="Android"></i>
+                        <i class="icon fjalonso-icon-logo-nodejs" title="Node.js"></i>
+                        <i class="icon fjalonso-icon-logo-mysql" title="MySQL"></i>
+                    </div>
+                </div>
+                <p class="work-text">Más detalles próximamente</p>
+            </div>
+            <div class="work-wrap">
+                <div class="work-img">
+                    <a href="https://play.google.com/store/apps/details?id=es.chromask.quiz4tv">
+                        <img src="/resources/images/work/quiz4tv.png" alt="Quiz4TV" title="Quiz4TV" />
+                    </a>
+                    <div class="work-tech">
+                        <span class="work-name">Quiz4TV</span>
+                        <i class="icon fjalonso-icon-logo-cast" title="Google Cast"></i>
+                        <i class="icon fjalonso-icon-logo-angular" title="AngularJS"></i>
+                        <i class="icon fjalonso-icon-logo-android" title="Android"></i>
+                        <i class="icon fjalonso-icon-logo-spring" title="Spring Framework"></i>
+                        <i class="icon fjalonso-icon-logo-mysql" title="MySQL"></i>
+                    </div>
+                </div>
+                <p class="work-text">Un completo juego de preguntas tipo Trivial para Chromecast, desarrollado con el SDK de Google Cast que comunica la aplicación Android con el servidor del juego construido en AngularJS que se nutre de preguntas mediante una API REST de un backend desarrollado con Spring Framework y MySQL.</p>
+            </div>
+            <div class="work-wrap">
+                <div class="work-img">
+                    <img src="/resources/images/work/fjalonso.png" alt="fjalonso.me" title="fjalonso.me" />
+                    <div class="work-tech">
+                        <span class="work-name">fjalonso.me</span>
+                        <i class="icon fjalonso-icon-logo-jekyll" title="Jekyll CMS"></i>
+                        <i class="icon fjalonso-icon-logo-foundation" title="Foundation"></i>
+                        <i class="icon fjalonso-icon-logo-sass" title="Sass"></i>
+                        <i class="icon fjalonso-icon-logo-jquery" title="jQuery"></i>
+                    </div>
+                </div>
+                <p class="work-text">Este sitio web está desarrollado usando Jekyll como gestor de contenidos estático, como tal no depende de ninguna base de datos, utiliza ficheros de texto para almacenar los contenidos, datos y configuración. Para construir la interfaz de usuario se ha utilizado básicamente el framework Foundation con Sass y jQuery.</p>
+            </div>
+
+            <span class="loading"></span>
+            <i class="icon fjalonso-icon-close close-content" title="cerrar"></i>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ '/js/vendor/classie.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/js/vendor/helper.js' | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ '/js/vendor/grid3d.js' | prepend: site.baseurl }}"></script>
+<script>
+    new grid3D( document.getElementById( 'grid3d' ) );
+</script>

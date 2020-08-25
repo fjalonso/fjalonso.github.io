@@ -1,0 +1,55 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+$base-font-family:  'Roboto', sans-serif;
+$title-font-family: 'Roboto', sans-serif;
+$base-font-size:    16px;
+$small-font-size:   $base-font-size * 0.875;
+$base-line-height:  1.5;
+
+$space-s:           24px;
+$space-m:           40px;
+$space-l:           64px;
+
+$size-xs:           30px;
+$size-s:            120px;
+$size-m:            460px;
+$size-l:            720px;
+$size-xl:           1080px;
+
+$breakpoint-small:  460px;
+$breakpoint-medium: 960px;
+$breakpoint-large:  1320px;
+
+$size-bar-bottom:   90px;
+$size-side-max:     580px;
+$size-work:         320px;
+$size-work-wrap:    360px;
+$size-work-double:  680px;
+
+$color-white:       #ffffff;
+$color-black:       #000000;
+$color-light:       #bdbeb9;
+$color-medium:      #6d6e69;
+$color-intermedium: #9d9e99;
+$color-dark:        #000000;
+$color-opacity:     rgba($color-dark, 0.1);
+$color-opacity-m:   rgba($color-dark, 0.3);
+
+$text-color:        $color-dark;
+$background-color:  $color-light;
+$link-color:        $color-medium;
+$link-hover-color:  $color-light;
+$menu-link-color:   $color-light;
+$menu-link-hover-color: $color-medium;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
