@@ -7,12 +7,12 @@ self.addEventListener('install', e => {
         `/`,
         `/index.html`,
         `/css/foundation.css`,
-        `/css/vendor/grid3d.css`,
+        `/css/otros/grid3d.css`,
         `/css/fjalonso.css`,
         `/css/main.css`,
-        `/js/vendor/modernizr.custom.js`,
-        `/js/vendor/typed.min.js`,
-        `/js/vendor/jquery.js`,
+        `/js/otros/modernizr.custom.js`,
+        `/js/otros/typed.min.js`,
+        `/js/otros/jquery.js`,
         `/js/foundation.min.js`,
         `/js/app.js`
       ])
